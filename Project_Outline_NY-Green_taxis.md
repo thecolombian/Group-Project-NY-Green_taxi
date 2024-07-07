@@ -9,8 +9,9 @@ July 17, 2024
 ## Team Members:
 - Meagan O’Connor
 - Aysenyr Teyfur
-- Jorge Reyes
 - Valdeir Faria F.
+- Jorge Reyes
+
 
 ## Project Description:
 This project aims to analyze the NYC Taxi Dataset to understand traffic and congestion patterns, fare and revenue dynamics, and geospatial trends within New York City. By leveraging this data, we will uncover insights that can inform urban transportation planning, economic policies, and improve the efficiency and sustainability of taxi services.
