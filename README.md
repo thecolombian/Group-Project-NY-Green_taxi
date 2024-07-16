@@ -16,7 +16,7 @@ Our goal with this project is to understand traffic and congestion patterns, far
 - [Green Taxi: Tip Behavior](ADD LINK CODE)
 
 [Presentation](ADD HYPERLINK)
----
+
 ## Description of Data Sources
 - [NYC Taxi - Green Taxi Data](https://learn.microsoft.com/en-us/azure/open-datasets/dataset-taxi-green?tabs=azureml-opendatasets): Taxi data for green taxis in NYC
 - [NYC Taxi - Yellow Taxi Data](https://learn.microsoft.com/en-us/azure/open-datasets/dataset-taxi-yellow?tabs=azureml-opendatasets): Taxi data for yellow taxis in NYC
@@ -32,7 +32,7 @@ We used a variety of different technologies and libraries for this project.<br /
 
 ## Data Transformation
 This dataset contains 923,257 rows of data. It was filtered between 2018-05-01 and 2018-06-06.The data had several columns that has null values due to being discontinued in the data collection throughout the years. Additional columns were created to clean and provide additional date and time information. Binned data was produced to create categorical variables for measurement variables as well.
----
+
 ## Data Analysis
 ### Ride Duration Analysis
 In analyzing statistically significant difference between the average trip durations throughout the week, it was found the at least one average trip duration for days of the week is different from the rest. Even after removing the weekends, it was found that at least one weekday has a different average trip duration. In the same light, trip distance was not a good indicator of how long it the taxi ride would be, likely due to the varying traffic throughout the day and night in New York.<br />
@@ -65,10 +65,9 @@ As expected, tipping behavior varies by the distance traveled, with the average 
 
 ### Boroughs for green taxis vs yellow taxis
 
----
 ## Presentation
 PowerPoint Deck summarizing our project: [Presentation]
----
+
 ## Resources
 ### Analysis Files
 - [Green Taxi: Ride Duration Analysis](ADD LINK TO CODE)
