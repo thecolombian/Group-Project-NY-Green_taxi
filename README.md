@@ -11,8 +11,12 @@ Our goal with this project is to understand traffic and congestion patterns, far
 - Is there a statistically significant difference bewtween trip distance or duration when considering the days of the week?
 - Is trip distance a good indicator of trip duration?
 
-[Presentation](ADD HYPERLINK)
+### Index
+- [Green Taxi: Ride Duration Analysis](ADD LINK TO CODE)
+- [Green Taxi: Tip Behavior](ADD LINK CODE)
 
+[Presentation](ADD HYPERLINK)
+---
 ## Description of Data Sources
 - [NYC Taxi - Green Taxi Data](https://learn.microsoft.com/en-us/azure/open-datasets/dataset-taxi-green?tabs=azureml-opendatasets): Taxi data for green taxis in NYC
 - [NYC Taxi - Yellow Taxi Data](https://learn.microsoft.com/en-us/azure/open-datasets/dataset-taxi-yellow?tabs=azureml-opendatasets): Taxi data for yellow taxis in NYC
@@ -28,18 +32,8 @@ We used a variety of different technologies and libraries for this project.<br /
 
 ## Data Transformation
 This dataset contains 923,257 rows of data. It was filtered between 2018-05-01 and 2018-06-06.The data had several columns that has null values due to being discontinued in the data collection throughout the years. Additional columns were created to clean and provide additional date and time information. Binned data was produced to create categorical variables for measurement variables as well.
-
+---
 ## Data Analysis
-### Green compared to yell - overview of findings
-
-### Boroughs for green taxis vs yellow taxis
-
-### Most common payment method for green taxis and yellow taxis
-
-### Tipping Behavior
-As expected, tipping behavior varies by the distance traveled, with the average tip being higher the further you travel. Time of day and day of the week have less to do with the average tip, as shown when creating a simple linear regression model with using each variable. Both had r-squared values close to 0, meaning that they explained little about the variation in the expected tip amount for taxi rides. <br />
-![tipping behavior by time of day and day of the week](https://github.com/thecolombian/Group-Project-NY-Green_taxi/blob/moconnor/output_data/Tipping-Behavior-by-Day-of-Week-and-Time-of-Day.png)
-
 ### Ride Duration Analysis
 In analyzing statistically significant difference between the average trip durations throughout the week, it was found the at least one average trip duration for days of the week is different from the rest. Even after removing the weekends, it was found that at least one weekday has a different average trip duration. In the same light, trip distance was not a good indicator of how long it the taxi ride would be, likely due to the varying traffic throughout the day and night in New York.<br />
 <br />
@@ -61,5 +55,23 @@ There are several neighborhoods that are close to one another that are popular d
 <br />
 When looking at trips closer from Brooklyn to Manhattan, the most popular drop off locations are Tribeca/Civic Center, the Lower East Side, and East Village. Tribeca has a large demand between 8am and 8pm. For the Lower East Side and East Village, most riders are getting rides over in the evening and into the late night, where demand slowly begins picking up at 4pm and slowing down around 3 am. On the weekend, the most popular destinations are the East Village, the Lower East Side, and Little Italy. For riders looking to go to Little Italy, most are looking to go between 8am and 7pm. During the week, the most popular destination is Tribeca/Civic Center. 
 
+### Tipping Behavior
+As expected, tipping behavior varies by the distance traveled, with the average tip being higher the further you travel. Time of day and day of the week have less to do with the average tip, as shown when creating a simple linear regression model with using each variable. Both had r-squared values close to 0, meaning that they explained little about the variation in the expected tip amount for taxi rides. <br />
+![tipping behavior by time of day and day of the week](https://github.com/thecolombian/Group-Project-NY-Green_taxi/blob/moconnor/output_data/Tipping-Behavior-by-Day-of-Week-and-Time-of-Day.png)
+
+### Most common payment method for green taxis and yellow taxis
+
+### Green compared to yellow - overview of findings
+
+### Boroughs for green taxis vs yellow taxis
+
+---
 ## Presentation
 PowerPoint Deck summarizing our project: [Presentation]
+---
+## Resources
+### Analysis Files
+- [Green Taxi: Ride Duration Analysis](ADD LINK TO CODE)
+- [Green Taxi: Tip Behavior](ADD LINK CODE)
+### Images
+- [output_data](ADD LINK CODE)
