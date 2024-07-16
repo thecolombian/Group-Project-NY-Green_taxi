@@ -1,0 +1,11 @@
+total 1852
+drwxr-xr-x@ 15 jorgereyes  staff   480B Jul  8 13:18 .git/
+-rw-r--r--   1 jorgereyes  staff    66B Jul  6 12:40 .gitattributes
+-rw-r--r--   1 jorgereyes  staff   371B Jul  6 12:40 .gitignore
+-rw-r--r--@  1 jorgereyes  staff   1.5M Jul  8 01:18 DOCUMENTATION _ HOW_TO_JILAWDINT-Install CONDA Java 3.9 - Jupyter notebooks - AZURTEML - and other tools-080724-081245.pdf
+-rw-r--r--@  1 jorgereyes  staff    37K Jul  8 01:18 Fare-and-Revenue-Analysis.ipynb
+-rw-r--r--@  1 jorgereyes  staff   108K Jul  8 01:18 Project-1-GreenTaxi-NYNY-July-2024.ipynb
+-rw-r--r--   1 jorgereyes  staff   7.6K Jul  8 01:22 Project_Outline_NY-Green_taxis.md
+-rw-r--r--@  1 jorgereyes  staff    36K Jul  8 01:18 Taxidev-first-run.ipynb
+-rw-r--r--@  1 jorgereyes  staff    73K Jul  8 01:18 Traffic-and-Congestion-Analysis.ipynb
+-rw-r--r--   1 jorgereyes  staff     0B Jul  8 13:19 test-file-test-jorge-2.txt
