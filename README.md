@@ -1,4 +1,4 @@
-# NYC Taxi Impact
+s# NYC Taxi Impact
 ## Team Members
 **Jorge Reyes**<br />
 **Megan O'Connor**<br />
@@ -47,7 +47,7 @@ It is quite impressive that despite the high afternoon demand, average taxi ride
 #### Between Borough Demand
 When looking at travel between different boroughs, popular routes are those from Brooklyn to Manhattan, Manhattan to the Bronx and Queens to Manhattan. Demand for the route from Brooklyn to Manhattan was relatively stable throughout the day, calming down around 2 am and picking up around 7 am, despite the average trip distance being one of the highest of the most popular between borough travel routes at 14.5 miles. When looking at demand by day of the week, there is a higher demand on the weekend than during the week, especially on Saturdays, to go from Brooklyn to Manhattan, which aligns with the increased demand in the later hours of the day, as people may be going to Manhattan for the nightlife.<br />
 <br />
-Manhattan to the Bronx is the most popular route, even though the average travel distance is 4 miles. Demand picks up throughout the day, peaking between 6pm and 8pm and slowly calming down around midnight. Looking at demand throughout the week shows that this route is more likely to be traveled between Tuesday and Saturday.<br />
+Manhattan to the Bronx is the most popular route, even though the average travel distance is 4 miles. Demand picks up throughout the day, peaking between 6 pm and 8 pm and slowly calming down around midnight. Looking at demand throughout the week shows that this route is more likely to be traveled between Tuesday and Saturday.<br />
 <br />
 The third most popular borough route is from Queens to Manhattan, where most demand is between 7 am and 1 pm. This route has a high demand throughout the week, with the highest demand on Saturday.<br />
 The reverse trip demand aligns differently from the number of rides requested for these routes. For example, the demand for taxi rides from Brooklyn to Manhattan has the highest remand outside of within-borough travel. However, few trip requests from Manhattan to Brooklyn indicate that other means of transportation are used to travel back to the pickup location or other means of transportation were used to get to the initial pickup location.<br />
@@ -55,7 +55,7 @@ The reverse trip demand aligns differently from the number of rides requested fo
 ##### Popular Drop-Off Neighborhoods in Manhattan
 Several neighborhoods are close to one another that are famous drop-off neighborhoods: Harlem (Central, Central North, East North, and East South), Morningside Heights, Upper East Side North, Upper West Side North, Hamilton Heights, and Washington Heights South. All of these locations are on the north side of Manhattan.<br />
 <br />
-When looking at trips closer from Brooklyn to Manhattan, the most popular drop-off locations are Tribeca/Civic Center, the Lower East Side, and East Village. Tribeca has a large demand between 8am and 8pm. For the Lower East Side and East Village, most riders are getting rides over in the evening and into the late night, where demand slowly begins picking up at 4 pm and slowing down around 3 am. On the weekend, the most popular destinations are the East Village, the Lower East Side, and Little Italy. For riders looking to go to Little Italy, most are looking to go between 8 am and 7 pm. During the week, the most popular destination is Tribeca/Civic Center. 
+When looking at trips closer from Brooklyn to Manhattan, the most popular drop-off locations are Tribeca/Civic Center, the Lower East Side, and East Village. Tribeca has a large demand between 8 am and 8 pm. For the Lower East Side and East Village, most riders are getting rides over in the evening and into the late night, where demand slowly begins picking up at 4 pm and slowing down around 3 am. On the weekend, the most popular destinations are the East Village, the Lower East Side, and Little Italy. For riders looking to go to Little Italy, most are looking to go between 8 am and 7 pm. During the week, the most popular destination is Tribeca/Civic Center. 
 
 ### Tipping Behavior
 As expected, tipping behavior varies by the distance traveled, with the average tip being higher the further you travel. Time of day and day of the week have less to do with the average tip, as shown when creating a simple linear regression model using each variable. Both had r-squared values close to 0, meaning that they explained little about the variation in the expected tip amount for taxi rides. <br />
