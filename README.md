@@ -14,8 +14,8 @@ Our goal with this project is to understand traffic and congestion patterns and 
 - Is trip distance a good indicator of trip duration?
 
 ### Index
-- [Green Taxi: Ride Duration Analysis]([ADD LINK TO CODE](https://github.com/thecolombian/Group-Project-NY-Green_taxi/blob/main/Green-Taxi-Only-Analysis/Green-Taxi-ONLY-Tip-Analysis.ipynb))
-- [Green Taxi: Tip Behavior]([ADD LINK CODE](https://github.com/thecolombian/Group-Project-NY-Green_taxi/blob/main/Green-Taxi-Only-Analysis/Green-Taxi-ONLY-Traffic-and-Congestion-Analysis.ipynb))
+- [Green Taxi: Ride Duration Analysis](Green-Taxi-Only-Analysis/Green-Taxi-ONLY-Tip-Analysis.ipynb)
+- [Green Taxi: Tip Behavior](Green-Taxi-Only-Analysis/Green-Taxi-ONLY-Traffic-and-Congestion-Analysis.ipynb)
 
 [Presentation](NYC_Taxi_Impact_Presentation.pdf)
 
