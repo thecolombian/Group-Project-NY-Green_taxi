@@ -33,7 +33,7 @@ We used a variety of different technologies and libraries for this project.<br /
 - **Analysis** Python (pandas, matplotlib, seaborn, scipy.stats), Jupyter Notebook, csv file<br />
 
 ## Data Transformation
-This dataset contains 923,257 rows of data. It was filtered between 2018-05-01 and 2018-06-06. Several columns had null values due to being discontinued throughout the years. Additional columns were created to clean and provide additional date and time information. Binned data was also produced to create categorical variables for measurement variables.
+This dataset contains 923,257 rows of data. It was filtered between Q1 2016 (2016-01-01 to 2016-31-01-2016). Several columns had null values due to being discontinued throughout the years. Additional columns were created to clean and provide additional date and time information. Binned data was also produced to create categorical variables for measurement variables.
 
 ## Data Analysis
 ### Ride Duration Analysis
