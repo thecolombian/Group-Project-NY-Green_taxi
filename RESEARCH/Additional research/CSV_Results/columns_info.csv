@@ -1,0 +1,24 @@
+Column Name,Total Records,Null Records
+vendorID,4484253,0
+lpepPickupDatetime,4484253,0
+lpepDropoffDatetime,4484253,0
+passengerCount,4484253,0
+tripDistance,4484253,0
+puLocationId,4484253,4484253
+doLocationId,4484253,4484253
+pickupLongitude,4484253,0
+pickupLatitude,4484253,0
+dropoffLongitude,4484253,0
+dropoffLatitude,4484253,0
+rateCodeID,4484253,0
+storeAndFwdFlag,4484253,0
+paymentType,4484253,0
+fareAmount,4484253,0
+extra,4484253,0
+mtaTax,4484253,0
+improvementSurcharge,4484253,0
+tipAmount,4484253,0
+tollsAmount,4484253,0
+ehailFee,4484253,4484253
+totalAmount,4484253,0
+tripType,4484253,13
