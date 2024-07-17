@@ -2,13 +2,15 @@
 ## Team Members
 **Jorge Reyes**<br />
 **Megan O'Connor**<br />
+**Valdeir Faria F**<br />
+**Aysenyr Teyfur**<br />
 
 ## Project Overview
-Our goal with this project is to understand traffic and congestion patterns, fare and revenue trends within New York City for Green Taxis.
+Our goal with this project is to understand traffic and congestion patterns, fare and revenue trends within New York City for Green Taxis to uncover travel behavior before the pandemic when public transportation was heavily used.
 
 ### Project Questions
 - Is trip length a good indicator of tip amount?
-- Is there a statistically significant difference bewtween trip distance or duration when considering the days of the week?
+- Is there a statistically significant difference bewtween trip demand on weekends and weekdays?
 - Is trip distance a good indicator of trip duration?
 
 ### Index
@@ -35,7 +37,7 @@ This dataset contains 923,257 rows of data. It was filtered between 2018-05-01 a
 
 ## Data Analysis
 ### Ride Duration Analysis
-In analyzing statistically significant difference between the average trip durations throughout the week, it was found the at least one average trip duration for days of the week is different from the rest. Even after removing the weekends, it was found that at least one weekday has a different average trip duration. In the same light, trip distance was not a good indicator of how long it the taxi ride would be, likely due to the varying traffic throughout the day and night in New York.<br />
+In analyzing if there was a statistically significant difference between trip demand on weekends vs weekdays, it was found there is likely a difference. Through regression analysis, it was found that trip distance was not a good indicator of how long it the taxi ride would be, likely due to the varying traffic throughout the day and night in New York.<br />
 <br />
 On average, a taxi ride is 23 minutes. Riders traveling at 6am have high expected travel times. During the week those average travel times add roughly 7 minutes to the morning commute. Afternoon travel times deviate from the overall average between the hours of 2pm and 4pm but add 3 to 4 minutes to the expected travel time.<br />
 ![average taxi ride duration](https://github.com/thecolombian/Group-Project-NY-Green_taxi/blob/moconnor/output_data/Average-Trip-Duration_3-graphs.png)
