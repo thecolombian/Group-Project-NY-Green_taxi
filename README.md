@@ -17,7 +17,7 @@ Our goal with this project is to understand traffic and congestion patterns and 
 - [Green Taxi: Ride Duration Analysis]([ADD LINK TO CODE](https://github.com/thecolombian/Group-Project-NY-Green_taxi/blob/main/Green-Taxi-Only-Analysis/Green-Taxi-ONLY-Tip-Analysis.ipynb))
 - [Green Taxi: Tip Behavior]([ADD LINK CODE](https://github.com/thecolombian/Group-Project-NY-Green_taxi/blob/main/Green-Taxi-Only-Analysis/Green-Taxi-ONLY-Traffic-and-Congestion-Analysis.ipynb))
 
-[Presentation](https://github.com/thecolombian/Group-Project-NY-Green_taxi/blob/main/NYC_Taxi_Impact_Presentation.pdf))
+[Presentation](NYC_Taxi_Impact_Presentation.pdf)
 
 ## Description of Data Sources
 - [NYC Taxi - Green Taxi Data](https://learn.microsoft.com/en-us/azure/open-datasets/dataset-taxi-green?tabs=azureml-opendatasets): Taxi data for green taxis in NYC
