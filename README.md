@@ -1,149 +1,78 @@
-# NYC Taxi Data Analysis
+# NYC Taxi Impact
+## Team Members
+**Jorge Reyes**<br />
+**Megan O'Connor**<br />
+**Valdeir Faria F**<br />
+**Aysenyr Teyfur**<br />
 
-## Project Title:
-NYC Taxi Data Analysis
+## Project Overview
+Our goal with this project is to understand traffic and congestion patterns, fare and revenue trends within New York City for Green Taxis to uncover travel behavior before the pandemic when public transportation was heavily used.
 
-## Project Due Date:
-July 17, 2024
+### Project Questions
+- Is trip length a good indicator of tip amount?
+- Is there a statistically significant difference bewtween trip demand on weekends and weekdays?
+- Is trip distance a good indicator of trip duration?
 
-## Team Members:
-- Meagan O’Connor
-- Aysenyr Teyfur
-- Valdeir Faria F.
-- Jorge Reyes
+### Index
+- [Green Taxi: Ride Duration Analysis](ADD LINK TO CODE)
+- [Green Taxi: Tip Behavior](ADD LINK CODE)
 
-## Project Description:
-This project aims to analyze the NYC Taxi Dataset to understand traffic and congestion patterns, fare and revenue dynamics, and geospatial trends within New York City. By leveraging this data, we will uncover insights that can inform urban transportation planning, economic policies, and improve the efficiency and sustainability of taxi services.
+[Presentation](ADD HYPERLINK)
 
-## Project Outline:
-### Data Collection and Preparation:
-1. Access and download the NYC Taxi Dataset from [Azure Open Datasets](https://learn.microsoft.com/en-us/azure/open-datasets/dataset-taxi-yellow?tabs=azureml-opendatasets).
-2. Clean the data by handling missing values, outliers, and ensuring data consistency.
-3. Perform exploratory data analysis (EDA) to understand the basic characteristics of the dataset.
+## Description of Data Sources
+- [NYC Taxi - Green Taxi Data](https://learn.microsoft.com/en-us/azure/open-datasets/dataset-taxi-green?tabs=azureml-opendatasets): Taxi data for green taxis in NYC
+- [NYC Taxi - Yellow Taxi Data](https://learn.microsoft.com/en-us/azure/open-datasets/dataset-taxi-yellow?tabs=azureml-opendatasets): Taxi data for yellow taxis in NYC
+- [NYC Taxi Zones](https://data.cityofnewyork.us/Transportation/NYC-Taxi-Zones/d3c5-ddgc): Taxi zone data containing names of the neighborhoods and boroughs.
 
-### Traffic and Congestion Analysis:
-1. Analyze temporal patterns to identify peak hours and days for taxi usage.
-2. Calculate ride durations and analyze their variation across different times and locations.
-3. Map traffic intensity across different areas of the city using heatmaps.
+### Data Exploration
+The team started with the Green Taxi dataset and added the additional Yellow Taxi data to do some comparative analysis. The Taxi Zone data was added to provide more granular information about trip routes. These datasets were cleaned by removing dupliate rows and dropping unnecessary and empty columns. 
 
-### Fare and Revenue Analysis:
-1. Compute average fares and analyze fare distribution for various trip lengths.
-2. Investigate tipping patterns and their variation across different times and areas.
-3. Identify key factors influencing fare prices through regression analysis or machine learning models.
+## Technologies Used
+We used a variety of different technologies and libraries for this project.<br />
+- **Data Transformation** Python(pandas, datetime, dateutil), Jupyter Notebook, csv file<br />
+- **Analysis** Python (pandas, matplotlib, seaborn, scipy.stats), Jupyter Notebook, csv file<br />
 
-### Geospatial Analysis:
-1. Identify and visualize major pickup and drop-off hotspots using geospatial mapping techniques.
-2. Analyze ride patterns across different boroughs and neighborhoods to identify trends and anomalies.
-3. Use clustering algorithms to detect underserved areas with low taxi availability and high demand.
+## Data Transformation
+This dataset contains 923,257 rows of data. It was filtered between 2018-05-01 and 2018-06-06. Several columns had null values due to being discontinued throughout the years. Additional columns were created to clean and provide additional date and time information. Binned data was also produced to create categorical variables for measurement variables.
 
-### Results Interpretation and Reporting:
-1. Summarize key findings from each analysis section.
-2. Visualize results using graphs, charts, and maps to provide clear insights.
-3. Discuss the implications of findings for urban transportation planning, policy-making, and taxi service optimization.
+## Data Analysis
+### Ride Duration Analysis
+In analyzing if there was a statistically significant difference between trip demand on weekends vs weekdays, it was found there is likely a difference. Through regression analysis, it was found that trip distance could have been a better indicator of how long it the taxi ride would be, likely due to the varying traffic throughout the day and night in New York.<br />
+<br />
+On average, a taxi ride is 23 minutes. Riders traveling at 6 am have high expected travel times. During the week those average travel times add roughly 7 minutes to the morning commute. Afternoon travel times deviate from the average between 2 pm and 4 pm but add 3 to 4 minutes to the expected travel time.<br />
+![average taxi ride duration](Green-Taxi-Only-Analysis/output_data/Average-Trip-Duration_3-graphs.png)
+This is quite impressive that despite the high afternoon demand, average taxi ride times are still generally quite low. The graphs below highlight taxi demand for different times and days of the week. The darkness in the heatmap highlights the heavy demand between 2 pm and 7 pm. When comparing the two heatmaps, one can see that despite the demand lasting until 7pm, the average duration of the rides begins to decrease around 5pm. More information on why average trip times decrease around 7 pm is given from the heatmap of Average Trip Distance by Hour and Day of the Week. In the evening, trip distance begins to decrease. In the mornings and during the workday, average trip distances are higher than the average of 3 miles, peaking at 5.5 miles between 5 am and 7 am on weekdays.<br />
+![taxi usage](Green-Taxi-Only-Analysis/output_data/Taxi-Usage_3-graphs.png)
 
-### Conclusion and Recommendations:
-1. Provide a comprehensive summary of insights gained from the analysis.
-2. Offer recommendations for improving taxi services and addressing identified issues.
-3. Suggest potential areas for further research or data collection to enhance the understanding of urban transportation dynamics.
+#### Between Borough Demand
+When looking at travel between different boroughs, popular routes are those from Brooklyn to Manhattan, Manhattan to the Bronx, and Queens to Manhattan. Demand for the route from Brooklyn to Manhattan relatively stable throughout the day, calming down around 2am and picking up around 7am, despite the average trip distance being one of the highest of the most popular between borough travel routes at 14.5 miles. When looking at demand by day of the week, there is a higher demand on the weekend than during the week, especially on Saturdays to go from Brooklyn to Manhattan which aligns with the increased demand in the later hours of the day, as people may be going to Manhattan for the nightlife.<br />
+<br />
+Manhattan to the Bronx is the next most popular route, even though the average travel distance is 4 miles. Demand picks up throughout the day, peaking between 6pm and 8pm and slowly calming down around midnight. Looking at demand throughout the week shows that this route is more likely to be traveled between Tuesday and Saturday.<br />
+<br />
+The third most popular between borough route is that from Queens to Manhattan, where most of the demand is between 7am and 1pm. This route has a high remand throughout the week, with the highest demand on Saturday.<br />
+The reverse trip demand does not align with the number of rides requested for these routes. For example, the demand for taxi rides from Brooklyn to Manhattan has the highest remand outside of within borough travel. However, there are few trip requests from Manhattan to Brooklyn, indicating that other means of transportation are used to travel back to the pickup location or other means of transportation were used to get to the initial pickup location.<br />
+![Ride Analysis Between Boroughs](https://github.com/thecolombian/Group-Project-NY-Green_taxi/blob/moconnor/output_data/Ride-Analysis-Between-Boroughs.png)
+##### Popular Drop Off Neighborhoods in Manhattan
+There are several neighborhoods that are close to one another that are popular drop off neighborhoods: Harlem (Central, Central North, East North, and East South), Morningside Heights, Upper East Side North, Upper West Side North, Hamilton Heights, and Washington Heights South. All of these locations are on the north side of Manhattan.<br />
+<br />
+When looking at trips closer from Brooklyn to Manhattan, the most popular drop off locations are Tribeca/Civic Center, the Lower East Side, and East Village. Tribeca has a large demand between 8am and 8pm. For the Lower East Side and East Village, most riders are getting rides over in the evening and into the late night, where demand slowly begins picking up at 4pm and slowing down around 3 am. On the weekend, the most popular destinations are the East Village, the Lower East Side, and Little Italy. For riders looking to go to Little Italy, most are looking to go between 8am and 7pm. During the week, the most popular destination is Tribeca/Civic Center. 
 
-## Research Questions to Answer:
-### Traffic and Congestion Analysis:
-- What are the peak hours for taxi rides in NYC?
-- How do ride durations vary by time of day and day of the week?
-- Which areas of the city experience the highest levels of taxi traffic?
+### Tipping Behavior
+As expected, tipping behavior varies by the distance traveled, with the average tip being higher the further you travel. Time of day and day of the week have less to do with the average tip, as shown when creating a simple linear regression model with using each variable. Both had r-squared values close to 0, meaning that they explained little about the variation in the expected tip amount for taxi rides. <br />
+![tipping behavior by time of day and day of the week](https://github.com/thecolombian/Group-Project-NY-Green_taxi/blob/moconnor/output_data/Tipping-Behavior-by-Day-of-Week-and-Time-of-Day.png)
 
-### Fare and Revenue Analysis:
-- What are the average fares for different types of trips (e.g., short vs. long distances)?
-- How do tipping patterns vary across different times and locations?
-- What factors most significantly affect fare prices (e.g., distance, time of day, weather conditions)?
+### Most common payment method for green taxis and yellow taxis
 
-### Geospatial Analysis:
-- What are the hotspots for taxi pickups and drop-offs?
-- How do ride patterns change across different boroughs or neighborhoods?
-- Can we identify underserved areas with low taxi availability?
+### Green compared to yellow - overview of findings
 
-## Datasets to Be Used:
-- **NYC Dataset**: This dataset includes detailed information on taxi rides in New York City, including pickup and dropoff locations, times, fares, and tips. It's often used for urban studies, transportation research, and data visualization.
+### Boroughs for green taxis vs yellow taxis
 
-## Rough Breakdown of Tasks:
+## Presentation
+PowerPoint Deck summarizing our project: [Presentation]
 
-### Jorge Reyes: Data Collection and Preparation
-**Tasks:**
-- Access and download the NYC Taxi Dataset from Azure Open Datasets.
-- Clean the data by handling missing values, outliers, and ensuring data consistency.
-- Perform exploratory data analysis (EDA) to understand basic dataset characteristics.
-- Document data cleaning and preparation steps in a Jupyter Notebook.
-
-### Meagan O’Connor: Traffic and Congestion Analysis
-**Tasks:**
-- Analyze temporal patterns to identify peak hours and days for taxi usage.
-- Calculate ride durations and analyze their variation across different times and locations.
-- Map traffic intensity across different city areas using heatmaps.
-- Prepare visualizations and summarize findings in a Jupyter Notebook.
-
-### Valdeir Faria F.: Fare and Revenue Analysis
-**Tasks:**
-- Compute average fares and analyze fare distribution for various trip lengths.
-- Investigate tipping patterns and their variation across different times and areas.
-- Identify key factors influencing fare prices using regression analysis or machine learning models.
-- Document analysis process and results in a Jupyter Notebook.
-
-### Aysenur Teyfur: Geospatial Analysis
-**Tasks:**
-- Identify and visualize major pickup and drop-off hotspots using geospatial mapping techniques.
-- Analyze ride patterns across different boroughs and neighborhoods to identify trends and anomalies.
-- Use clustering algorithms to detect underserved areas with low taxi availability and high demand.
-- Create visualizations and detailed explanations in a Jupyter Notebook.
-
-### Collaboration and Reporting:
-**Tasks for All Team Members:**
-- Regularly update the team on progress and findings.
-- Review and provide feedback on each other’s work.
-- Collaborate on combining individual Jupyter Notebooks into a cohesive final report.
-- Prepare a presentation summarizing key insights, visualizations, and recommendations for stakeholders.
-
-## Project Timeline for NYC Taxi Data Analysis:
-### Week 1 (July 3 - July 9):
-#### July 3 - July 6:
-- Jorge Reyes: Data Collection and Preparation
-  - Access and download the dataset.
-  - Initial cleaning and handling missing values.
-  - Basic data type conversions and EDA.
-  - Document data cleaning and preparation steps in a Jupyter Notebook.
-  - Share the cleaned dataset with the team.
-
-#### July 7 - 9:
-- Meagan O’Connor: Traffic and Congestion Analysis
-  - Analyze temporal patterns to identify peak hours and days.
-  - Calculate ride durations and their variation.
-- Valdeir Faria F.: Fare and Revenue Analysis
-  - Compute average fares and analyze fare distribution.
-- Aysenur Teyfur: Geospatial Analysis
-  - Identify and visualize major pickup and drop-off hotspots using geospatial mapping techniques.
-
-### Week 2 (July 10 - July 16):
-#### July 10 - 14:
-- Aysenur Teyfur: Geospatial Analysis
-  - Identify and visualize major pickup and drop-off hotspots using geospatial mapping techniques.
-  - Analyze ride patterns across boroughs and neighborhoods.
-  - Use clustering algorithms to detect underserved areas.
-- Valdeir Faria F.: Fare and Revenue Analysis
-  - Investigate tipping patterns and their variation.
-  - Identify key factors influencing fare prices using regression analysis or machine learning models.
-- Meagan O’Connor: Traffic and Congestion Analysis
-  - Map traffic intensity across different areas using heatmaps.
-
-#### July 15 - 16:
-- All Team Members: Collaboration and Reporting
-  - Combine individual notebooks into a cohesive final report.
-
-### Final Day (July 17):
-- All Team Members:
-  - Prepare a presentation summarizing key insights, visualizations, and recommendations.
-  - Final review and submission of the report and presentation.
-
-## Dependencies and Collaboration:
-- Jorge's data preparation is foundational and should be completed first.
-- Meagan and Valdeir can start specific analyses once the cleaned dataset is available.
-- Aysenur can start initial geospatial mapping while other analyses are being completed but will finalize with the completed dataset.
-- Regular check-ins and collaboration are essential to ensure alignment and address any issues promptly.
+## Resources
+### Analysis Files
+- [Green Taxi: Ride Duration Analysis](ADD LINK TO CODE)
+- [Green Taxi: Tip Behavior](ADD LINK CODE)
+### Images
+- [output_data](ADD LINK CODE)
