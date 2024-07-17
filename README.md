@@ -68,7 +68,7 @@ As expected, tipping behavior varies by the distance traveled, with the average 
 ### Boroughs for green taxis vs yellow taxis
 
 ## Presentation
-PowerPoint Deck summarizing our project: [Presentation]
+PowerPoint Deck summarizing our project: [Presentation] (NYC_Taxi_Impact_Presentation.pdf)
 
 ## Resources
 ### Analysis Files
