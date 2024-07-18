@@ -65,7 +65,7 @@ As expected, tipping behavior varies by the distance traveled, with the average 
 In Q1 2016, cash was the most common payment method for both green and yellow taxis, accounting for 50% of all transactions. Credit card payments were also prevalent, making up 47% of the payments. The remaining 3% of the transactions were either free rides, discounted fares, or disputed charges. This distribution highlights taxi passengers' significant reliance on cash and credit cards during this period.
 It is interesting that in 2016, cash was still a relevant method of payment. 
 
-![Payment Methods by Borough in NY on Q1 2016] (images/payment_methods_by_borough.png)
+![Payment Methods by Borough in NY on Q1 2016](images/payment_methods_by_borough.png)
 ![ Most Comon Method Of Payment in Q1 2016](images/payment_methods.png)
 ![Green Taxi Cab Method of Payment by the hour](images/green_payment_methods_by_hour.png)
 
