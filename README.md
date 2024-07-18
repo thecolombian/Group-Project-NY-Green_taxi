@@ -80,10 +80,6 @@ The data from Q1 2016 suggests that yellow taxis were dedicated to servicing Man
 ![Total Rides By Month](images/total_rides_by_month.png)
 ![Green Taxi Cab Company - Total Rides by Month Q1 2016](images/green_rides_by_borough_month.png)
 
-
-
-### Boroughs for green taxis vs yellow taxis
-
 ## Presentation
 PowerPoint Deck summarizing our project: [Presentation](NYC_Taxi_Impact_Presentation.pdf)
 
