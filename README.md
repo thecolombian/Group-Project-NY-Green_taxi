@@ -70,6 +70,17 @@ It is interesting that in 2016, cash was still a relevant method of payment.
 ![Green Taxi Cab Method of Payment by the hour](images/green_payment_methods_by_hour.png)
 
 ### Green compared to yellow - overview of findings
+Based on findings from Q1 2016, there is a significant difference in the operational focus and ride volume between yellow and green taxis in New York City. During this period, yellow taxis experienced six times the number of rides per month compared to green taxis, underscoring their dominance in the market. This higher volume can be attributed to their primary service area, primarily concentrated in Manhattan. Yellow taxis had a minimal presence in other boroughs, indicating that their operations were heavily centered around Manhattan's bustling, densely populated, and commercially vibrant areas.
+In contrast, green taxis provided a more evenly distributed service across all boroughs of New York City. While they had a presence in Manhattan, their ride volume in this area was significantly lower than that of yellow taxis. This broader service area meant green taxis were more accessible to residents in the outer boroughs, offering a crucial transportation option where yellow taxis were less prevalent.
+The data from Q1 2016 suggests that yellow taxis were dedicated to servicing Manhattan, capitalizing on the high demand in this central location. Meanwhile, green taxis served most of the city, ensuring that areas outside Manhattan were not neglected. This distinction in service areas and ride volumes reflects the strategic, and operational differences between the two taxi services, with yellow taxis focusing on high-density, high-demand zones and green taxis providing widespread coverage throughout New York City.
+
+![Comparason Q1 2016 - Number of rides Green Taxi VS Yellow Taxi](images/comparison_total_rides.png)
+
+![Yellow Cab rides by Borough](images/yellow_rides_by_borough_month.png)
+![Total Rides By Month](images/total_rides_by_month.png)
+![Green Taxi Cab Company - Total Rides by Month Q1 2016](images/green_rides_by_borough_month.png)
+
+
 
 ### Boroughs for green taxis vs yellow taxis
 
